@@ -1,0 +1,17 @@
+{% if hobbies_list %}
+    <a href="/" style="padding: 15px 7px 15px 40%">Home</a>
+    <a href="/portfolio/" style="padding: 15px 7px">Portfolio</a>
+    <a href="/contact/" style="padding: 15px 7px">Contact Info</a>
+    <h2>My Hobbies</h2>
+    <ul>
+    {% for hobby in hobbies_list %}
+        <li>
+            <h5>{{ hobby.hobby_name }}:</h5>
+            <p>{{ hobby.hobby_description }}</p>
+        <br>
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}

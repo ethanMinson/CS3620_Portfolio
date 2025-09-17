@@ -1,0 +1,17 @@
+{% if portfolio_list %}
+    <a href="/" style="padding: 15px 7px 15px 40%">Home</a>
+    <a href="/hobbies/" style="padding: 15px 7px">Hobbies</a>
+    <a href="/contact/" style="padding: 15px 7px">Contact Info</a>
+    <h2>Portfolio</h2>
+    <ul>
+    {% for project in portfolio_list %}
+        <li>
+            <h5>{{ project.portfolio_name }}:</h5>
+            <p>{{ project.portfolio_description }}</p>
+        <br>
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
