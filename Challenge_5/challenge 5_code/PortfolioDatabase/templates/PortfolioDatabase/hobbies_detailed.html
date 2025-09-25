@@ -1,0 +1,27 @@
+<html lang="en">
+    <head>
+        <title>Hobbies Detailed</title>
+        <link rel="stylesheet" href="../../../static/style.css">
+    </head>
+    <body>
+        {% if hobbies_list %}
+            <a href="/" class="btn" style="margin-left: 40%">Home</a>
+            <a href="/portfolio/" class="btn">Portfolio</a>
+            <a href="/contact/" class="btn">Contact Info</a>
+            <a href="/hobbies/" class="btn">Hobbies Plain View</a>
+            <h2 class="detailed">My Hobbies</h2>
+            <ul class="detailed">
+            {% for hobby in hobbies_list %}
+                <li>
+                    <h5>{{ hobby.hobby_name }}:</h5>
+                    <p class="dispPage">{{ hobby.hobby_description }}</p>
+                    <img src="{{ hobby.hobby_img.url }}" alt="{{ hobby.hobby_name }}"/>
+                <br>
+                </li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p>No hobbies are available.</p>
+        {% endif %}
+    </body>
+</html>

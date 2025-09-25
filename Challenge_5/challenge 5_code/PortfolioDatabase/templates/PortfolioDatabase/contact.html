@@ -1,0 +1,17 @@
+{% load static %}
+<html lang="en">
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="../../../static/style.css">
+    </head>
+    <body>
+        <a href="/" style="margin-left: 40%" class="btn">Home</a>
+        <a href="/hobbies/" class="btn">Hobbies</a>
+        <a href="/portfolio/" class="btn">Portfolio</a>
+        <div class="contact_body">
+            <h2>Contact information</h2>
+            <p class="contact">{{ contact_text }}</p>
+            <img src="{% static 'email_icon.png' %}" alt="email" class="contact"/>
+        </div>
+    </body>
+</html>

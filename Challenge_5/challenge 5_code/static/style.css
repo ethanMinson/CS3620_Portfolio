@@ -1,0 +1,73 @@
+.btn{
+    padding: 15px 7px;
+    background-color: lightblue;
+    text-decoration: none;
+    color: dimgray;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+.btn:hover{
+    background-color: aquamarine;
+}
+
+p.base{
+    margin: 1%;
+    width: 450px;
+}
+
+p.home{
+    margin: 2% 30%;
+    width: 500px;
+}
+
+p.dispPage{
+    width: 400px;
+    margin: 15px 50px;
+}
+p.contact{
+    display: inline;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 2%;
+}
+
+h2.detailed{
+    margin: 2% 30%;
+    color: dodgerblue;
+}
+
+body{
+    background-color: lightcyan;
+}
+
+h1{
+    width: 200px;
+    margin: 2% 43%;
+    color: dodgerblue;
+}
+
+ul.detailed{
+    list-style-type: circle;
+}
+
+img.welcome{
+    margin-left: 35%;
+}
+
+img.contact{
+    display: inline;
+    max-width: 30px;
+    margin: 0px;
+}
+
+.contact_body{
+    margin-left: 10%;
+}
+
+h5{
+    color: darkcyan;
+}

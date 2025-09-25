@@ -1,0 +1,27 @@
+<html lang="en">
+    <head>
+        <title>Portfolio Detailed</title>
+        <link rel="stylesheet" href="../../../static/style.css">
+    </head>
+    <body>
+        {% if portfolio_list %}
+            <a href="/" style="margin-left: 40%" class="btn">Home</a>
+            <a href="/hobbies/" class="btn">Hobbies</a>
+            <a href="/contact/" class="btn">Contact Info</a>
+            <a href="/portfolio/" class="btn">Portfolio Plain View</a>
+            <h2 class="detailed">Portfolio</h2>
+            <ul class="detailed">
+            {% for project in portfolio_list %}
+                <li>
+                    <h5>{{ project.portfolio_name }}:</h5>
+                    <p class="dispPage">{{ project.portfolio_description }}</p>
+                    <img src="{{ project.portfolio_img.url }}" alt="{{ project.portfolio_name }}"/>
+                <br>
+                </li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p>No portfolio is available.</p>
+        {% endif %}
+    </body>
+</html>
