@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>{{ story.title }}</title>
+</head>
+<body>
+    <h2 style="margin-left: 25%">{{ story.title }}</h2>
+    <section class="form">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input class="btn" type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+</html>

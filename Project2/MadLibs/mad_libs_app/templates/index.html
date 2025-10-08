@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Home</title>
+</head>
+<body>
+    <div class="index">
+    <h1>Welcome to my Mad Libs Website</h1>
+    <p class="main">From the list below select a Mad Libs to play</p>
+    <ul>
+        {% for madlib in madlib_list %}
+            <li>
+                <h4>
+                    <a href="{% url 'madlib' slug=madlib.slug %}" class="index-title">{{ madlib.title }}</a>
+                </h4>
+            </li>
+        {% endfor %}
+    </ul>
+    </div>
+</body>
+</html>

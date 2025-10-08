@@ -1,0 +1,66 @@
+.index-title{
+    padding: 7px 7px;
+    background-color: darkslateblue;
+    text-decoration: none;
+    color: lightskyblue;
+    border-radius: 5px;
+    margin: 2px
+}
+
+.index-title:hover{
+    background-color: darkcyan;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    color: darkcyan;
+}
+
+p.main{
+    color: darkslategrey;
+}
+
+body{
+    background-color: lightcyan;
+}
+
+section.form{
+    margin-left: 25%;
+}
+
+p.finished{
+    margin-left: 25%;
+    width: 400px;
+}
+
+h2{
+    color: dodgerblue;
+    text-shadow:
+    -1px -1px 0 white,
+     1px -1px 0 white,
+    -1px  1px 0 white,
+     1px  1px 0 white;
+}
+
+.btn{
+    padding: 7px 7px;
+    background-color: lightblue;
+    text-decoration: none;
+    color: dimgray;
+    border-radius: 10px;
+    border: none;
+}
+.btn:hover{
+    background-color: aquamarine;
+}
+
+h2.story-title{
+    margin-left: 25%;
+}
+
+.index{
+    margin-left: 25%;
+}

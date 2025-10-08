@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Your Story</title>
+</head>
+<body>
+    <h2 class="story-title">{{ story.title }}</h2>
+    <p class="finished">{{ result }}</p>
+    <a class="btn" href="{% url 'index' %}">Play again</a>
+</body>
+</html>
